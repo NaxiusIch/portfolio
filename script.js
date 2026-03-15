@@ -1,26 +1,18 @@
-const channelId = "YOUR_CHANNEL_ID";
+// Example: change subscriber count
 
-function updateSubs(){
+let subs = 1200000;
 
-fetch(`https://api.socialcounts.org/youtube-live-subscriber-count/${channelId}`)
+function formatSubs(number){
 
-.then(res => res.json())
+    if(number >= 1000000){
+        return (number/1000000).toFixed(1) + "M Subscribers";
+    }
 
-.then(data => {
+    if(number >= 1000){
+        return (number/1000).toFixed(1) + "K Subscribers";
+    }
 
-document.getElementById("subs").innerText =
-data.est_sub + " subs";
-
-})
-
-.catch(()=>{
-
-document.getElementById("subs").innerText = "";
-
-});
-
+    return number + " Subscribers";
 }
 
-updateSubs();
-
-setInterval(updateSubs,30000);
+document.getElementById("yt-subs").innerText = formatSubs(subs);
