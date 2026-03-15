@@ -103,7 +103,7 @@ display:flex;
 
 flex-direction:column;
 
-gap:15px;
+gap:12px;
 
 }
 
@@ -112,18 +112,16 @@ gap:15px;
 .social-item{
 
 display:flex;
-
 align-items:center;
 
-gap:15px;
+gap:12px;
 
 text-decoration:none;
-
 color:white;
 
 background:rgba(255,255,255,0.12);
 
-padding:14px 20px;
+padding:10px 16px;
 
 border-radius:12px;
 
@@ -145,8 +143,8 @@ transform:scale(1.03);
 
 .social-avatar{
 
-width:45px;
-height:45px;
+width:38px;
+height:38px;
 
 border-radius:50%;
 
