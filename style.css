@@ -62,17 +62,37 @@ box-shadow:0 20px 60px rgba(0,0,0,0.45);
 
 .avatar{
 
-width:140px;
+position:relative;
 
+width:140px;
 height:140px;
 
 margin:auto;
 
 border-radius:50%;
 
-overflow:hidden;
+padding:4px;
 
-border:4px solid white;
+background:linear-gradient(
+45deg,
+#00f2ff,
+#4facfe,
+#00ffcc,
+#00f2ff
+);
+
+background-size:300% 300%;
+
+animation:avatarMainGlow 8s linear infinite;
+
+transform:1.05;
+
+box-shadow:
+
+0 0 25px rgba(0,255,255,0.6),
+0 0 45px rgba(0,255,255,0.35);
+
+transition:0.3s;
 
 }
 
@@ -81,11 +101,21 @@ border:4px solid white;
 width:100%;
 height:100%;
 
+border-radius:50%;
+
 object-fit:cover;
 
 object-position:50% 20%;
 
 display:block;
+
+}
+
+@keyframes avatarMainGlow{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 
 }
 
