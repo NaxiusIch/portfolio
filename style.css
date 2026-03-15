@@ -1,0 +1,36 @@
+body{
+margin:0;
+font-family:Arial;
+background: linear-gradient(135deg,#4CAF50,#03A9F4);
+color:white;
+text-align:center;
+}
+
+nav{
+padding:20px;
+font-size:20px;
+}
+
+.hero{
+margin-top:80px;
+}
+
+.avatar{
+width:150px;
+border-radius:50%;
+}
+
+.links a{
+display:inline-block;
+margin:10px;
+padding:10px 20px;
+background:white;
+color:black;
+text-decoration:none;
+border-radius:20px;
+transition:0.3s;
+}
+
+.links a:hover{
+transform:scale(1.1);
+}
